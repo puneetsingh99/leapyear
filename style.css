@@ -1,62 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 *{
-    box-sizing: border-box;
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-body, html{
+
+html, body{
     height: 100%;
-}
-body{
     font-family: 'Poppins', sans-serif;
-    background-color:cornflowerblue;
+}
+
+body{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-image: url("img/stars.jpg");
 }
+
 .container{
-    flex-basis: 60%;
-    max-width: 50%;
-    background-color: darkgreen;
+    background: rgba(255, 255, 255, 0.03);    
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    box-shadow: 10px, 10px;
+    
 }
 
 header{
+    background: rgba(255, 255, 255, 0.02);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: cyan;
-    text-align: center;
     flex-basis: 70%;
+    flex-grow: 1;
     padding: 2rem;
-}
-
-header p{
-    margin-top: 2rem;
-    font-size: large;
-    text-align: start;
 }
 
 aside{
-    background-color: darkgoldenrod;
+    background: rgba(255, 255, 255, 0.02);
     flex-basis: 30%;
+    flex-grow: 1;
     padding: 2rem;
 }
-#input-dob{
-    height: 3rem;
-    width: 70%;
-    padding: 1rem;
-    margin: 2rem;
+
+header h1, input, button{
+    margin-bottom: 2rem;
+    color: white;
+}   
+
+p{
+    color: white; 
+}
+
+#p-dob{
+    font-size: 1.5rem;
     text-align: center;
-    font-size: large;
-}
-#btn-checkLeapYear{
-    text-transform: uppercase;
-    height: 2.5rem;
-    width: 70%;
     margin-bottom: 1rem;
-    font-size: medium;
+    color: white; 
 }
+
+
+header h1{
+    text-align: center;
+}
+
+header input{
+    padding: 0.7rem 1rem;
+    width: 70%;
+    font-size: x-large;
+    /* font-weight: bolder; */
+    color: black
+}
+
+header button{
+    padding: 0.7rem 1rem;
+    width: 70%;
+    font-size: x-large;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    background-size: 200% auto;
+    box-shadow:5px 5px #F4719F;
+    color:white;
+    text-shadow: 3px 2px black;            
+
+}
+
+#div-output{
+
+    width: 70%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
