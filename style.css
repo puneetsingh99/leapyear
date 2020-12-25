@@ -24,6 +24,9 @@ body{
     flex-wrap: wrap;
     flex-basis: 50%;
     box-shadow: 10px, 10px;
+    backdrop-filter: blur(3px);
+    border: solid 3px transparent;
+    border-radius: 15px;
     
 }
 
